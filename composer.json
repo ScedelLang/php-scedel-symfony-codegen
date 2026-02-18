@@ -2,6 +2,18 @@
   "name": "scedel/codegen-symfony",
   "description": "Symfony class generator for SCEDel schemas",
   "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "SCEDel contributors"
+    }
+  ],
+  "keywords": [
+    "scedel",
+    "schema",
+    "codegen",
+    "symfony"
+  ],
   "require": {
     "php": "^8.3",
     "scedel/schema": "*",
