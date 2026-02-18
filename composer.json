@@ -1,0 +1,27 @@
+{
+  "name": "scedel/codegen-symfony",
+  "description": "Symfony class generator for SCEDel schemas",
+  "type": "library",
+  "require": {
+    "php": "^8.3",
+    "scedel/schema": "*",
+    "symfony/validator": "^7.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Scedel\\Codegen\\Symfony\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Scedel\\Codegen\\Symfony\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit --configuration phpunit.xml",
+    "generate": "php bin/generate-symfony.php"
+  }
+}
