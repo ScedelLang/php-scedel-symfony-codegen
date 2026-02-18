@@ -1,11 +1,17 @@
 # scedel/codegen-symfony
 
-Generates Symfony-ready PHP classes from SCEDel schemas (`SchemaRepository`) with `symfony/validator` attributes.
+<img src="https://raw.githubusercontent.com/ScedelLang/grammar/5f1e7572f328d657c726a2fcaeaf53d9f6863d6a/logo.svg" width="250px" alt="logo" />
+
+Generates Symfony-ready PHP classes from Scedel schemas (`SchemaRepository`) with `symfony/validator` attributes.
+
+## RFC support
+
+- [Target RFC: `0.14.2`](https://github.com/ScedelLang/grammar/blob/main/RFC-Scedel-0.14.2.md)
 
 ## What it does
 
-- Builds DTO-like classes for custom record-like SCEDel types.
-- Maps many builtin SCEDel constraints to Symfony `Assert\*` attributes.
+- Builds DTO-like classes for custom record-like Scedel types.
+- Maps many builtin Scedel constraints to Symfony `Assert\*` attributes.
 - Understands control annotations under `php.*` and `php.symfony.*`.
 - Returns warnings for unsupported/ambiguous constructs.
 
@@ -72,4 +78,4 @@ If the value does not start with `Assert\`, generator prepends it automatically.
 - Non-record-like custom types are skipped with warnings.
 - Inline record fields are generated as `array` with warnings.
 - Conditional types are simplified (best-effort mapping + warnings).
-- Unsupported SCEDel validators/arguments are reported in warnings.
+- Unsupported Scedel validators/arguments are reported in warnings.

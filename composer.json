@@ -1,11 +1,11 @@
 {
   "name": "scedel/codegen-symfony",
-  "description": "Symfony class generator for SCEDel schemas",
+  "description": "Symfony class generator for Scedel schemas",
   "type": "library",
   "license": "MIT",
   "authors": [
     {
-      "name": "SCEDel contributors"
+      "name": "Scedel contributors"
     }
   ],
   "keywords": [
